@@ -126,7 +126,7 @@ return (
         <option value="">--Select File--</option>
         {diffs.length > 0 && diffs.map((fileDiff, index) => (
           <option key={`file-select-${index}`} value={fileDiff.file}>
-            {fileDiff.file}
+            {`${fileDiff.file}${fileDiff.onlyFormattingChanges ? ` (Only formatting changes)` : ''}`}
           </option>
         ))}
       </select>
