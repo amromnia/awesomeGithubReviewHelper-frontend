@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './DiffStyles.css'; // Create a CSS file for custom styles
 import './App.css';
 
 import DiffViewer from './DiffViewer'; // Import the DiffViewer component
